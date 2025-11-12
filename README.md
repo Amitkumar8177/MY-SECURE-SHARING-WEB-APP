@@ -9,7 +9,7 @@ This repository contains a secure file-sharing application composed of a Node.js
   - `config/` — database and other configuration
   - `controllers/` — route handlers (auth, admin, files)
   - `middleware/` — auth checks and other middleware
-  - `models/` — Mongoose (or similar) models (e.g., `user.js`)
+  - `models/` — database models (e.g., `user.js`)
   - `routes/` — route definitions grouped by feature
   - `uploads/` — stored uploaded files (ignored by git)
   - `.env` — environment variables (DO NOT commit)
@@ -27,7 +27,7 @@ This repository contains a secure file-sharing application composed of a Node.js
 
 ## Tech stack
 
-- Backend: Node.js, Express, MongoDB (Mongoose) or similar
+- Backend: Node.js, Express, SQLite (file-based) — e.g. using `sqlite3`, `better-sqlite3`, or an ORM like `Sequelize` with the `sqlite` dialect
 - Frontend: React (Create React App structure) + Context for auth
 - Authentication: JWT tokens
 
@@ -48,7 +48,7 @@ The backend handles data persistence, authentication, file storage and business 
 
 Use the provided `.env.example` as a template. Copy it to `backend/.env` and provide real values.
 
-- `MONGO_URI` — MongoDB connection string
+- `DATABASE_FILE` (or `SQLITE_FILE`) — path to the SQLite database file (for example `./backend/data/database.sqlite`). If your project uses a different env var name, use that instead.
 - `JWT_SECRET` — secret used to sign JWTs (keep this secret)
 - `PORT` — server port (default `5000`)
 - `UPLOAD_DIR` — folder for uploaded files (default `uploads`)
