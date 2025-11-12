@@ -1,0 +1,41 @@
+# Node
+node_modules/
+
+# Env
+.env
+backend/.env
+
+# Uploads
+backend/uploads/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Windows
+desktop.ini
+
+# Build artifacts
+dist/
+build/
+
+# Other
+npm-debug.log
+pids
+*.pid
+*.seed
+*~
+
+# Lockfiles (if you prefer not to commit)
+# package-lock.json
+# yarn.lock
