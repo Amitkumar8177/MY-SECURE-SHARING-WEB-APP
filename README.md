@@ -190,10 +190,3 @@ Add a license file if desired (for example, `LICENSE` with MIT). If you want, I 
 
 ---
 
-If you'd like, I can also:
-
-- Add API examples (curl/postman) for each route.
-- Add a `frontend/.env.example` showing `REACT_APP_API_URL`.
-- Add a short `CONTRIBUTING.md` and `LICENSE` file.
-
-Tell me which of these you'd like next.
